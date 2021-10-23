@@ -17,5 +17,4 @@ public class Note {
     public String getUsername() {return username;}
     public String getTitle() {return title;}
     public String getContent() {return content;}
-
 }
