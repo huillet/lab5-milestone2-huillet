@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
     public void goToDisplayActivity()
     {
         Intent intent = new Intent(this, DisplayActivity.class);
-        // intent.putExtra("message",s);
         startActivity(intent);
     }
 }

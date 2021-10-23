@@ -7,19 +7,31 @@
     tools:context=".EditActivity"
     >
 
-    <TextView
+
+    <EditText
         android:id="@+id/editText"
-        android:layout_width="410dp"
-        android:layout_height="629dp"
+        android:layout_width="415dp"
+        android:layout_height="574dp"
+        android:gravity="top"
         android:hint="Write here..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="411dp"
+        android:layout_height="47dp"
+        android:gravity="top"
+        android:hint="Title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/save_button"
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:onClick="onSave"
         android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
