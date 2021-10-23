@@ -46,6 +46,7 @@ public class DisplayActivity extends AppCompatActivity {
                 goToMainActivity();
                 break;
             case R.id.add:
+                goToEditActivity();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -54,6 +55,12 @@ public class DisplayActivity extends AppCompatActivity {
     public void goToMainActivity()
     {
         Intent intent = new Intent(this, com.example.lab5_milestone2_huillet.MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToEditActivity()
+    {
+        Intent intent = new Intent(this, com.example.lab5_milestone2_huillet.EditActivity.class);
         startActivity(intent);
     }
 }
